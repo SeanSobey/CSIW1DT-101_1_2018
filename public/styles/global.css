@@ -43,7 +43,29 @@ a:hover {
 }
 
 nav {
-    height: 20px;
+    clear: both;
+    margin: 1em 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 100px;
+    padding: 1em 1em;
+}
+
+nav ul li a {
+    text-align: center;
+    font-size: 120%;
+}
+
+nav ul li a.current {
+    color: goldenrod;
 }
 
 header {
@@ -83,7 +105,7 @@ blockquote:before {
     display: block;
     padding-left: 10px;
     content: "\201C";
-    font-size: 80px;
+    font-size: 500%;
     position: absolute;
     left: -20px;
     top: -20px;
@@ -92,7 +114,7 @@ blockquote:before {
 
 blockquote cite {
     color: #999999;
-    font-size: 14px;
+    font-size: 90%;
     display: block;
     margin-top: 5px;
 }
@@ -114,8 +136,7 @@ footer address {
 
 .center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .clear {
