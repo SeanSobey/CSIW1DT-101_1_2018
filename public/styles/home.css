@@ -3,7 +3,33 @@ main img {
 }
 
 main h2 {
-    margin-top: 10px;
+    margin-top: 2em;
     text-align: center;
     color: darkgoldenrod;
+}
+
+main h3 {
+    margin-top: 1.2em;
+    text-align: center;
+}
+
+section {
+    float: left;
+    width: 950px;
+    margin-right: 50px;
+}
+
+aside {
+    float: right;
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+aside figure {
+	text-align: center;
+}
+
+aside figure img {
+	margin: 0 auto;
+	display: block;
 }
