@@ -13,6 +13,11 @@ main h3 {
     text-align: center;
 }
 
+main ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
 section {
     float: left;
     width: 950px;
@@ -21,15 +26,24 @@ section {
 
 aside {
     float: right;
-	width: 200px;
-	margin-bottom: 20px;
+    width: 200px;
+    margin-bottom: 20px;
 }
 
 aside figure {
-	text-align: center;
+    text-align: center;
 }
 
 aside figure img {
-	margin: 0 auto;
-	display: block;
+    margin: 0 auto;
+    display: block;
+}
+
+article h3 {
+    margin-bottom: 10px;
+}
+
+article img {
+    float: left;
+    margin: 1em;
 }
