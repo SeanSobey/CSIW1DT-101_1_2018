@@ -47,3 +47,6 @@ article img {
     float: left;
     margin: 1em;
 }
+
+@media print {
+}
