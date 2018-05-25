@@ -55,12 +55,14 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    width: 100px;
-    padding: 1em 1em;
+    width: 12%;
+    padding: 1em 0;
 }
 
 nav ul li a {
+    display: block;
     text-align: center;
+    width: 100%;
     font-size: 120%;
 }
 
