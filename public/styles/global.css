@@ -33,6 +33,21 @@ body {
     margin: 0 auto;
 }
 
+h1 {
+    margin-bottom: 1.5em;
+}
+
+h2 {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    color: darkgoldenrod;
+}
+
+h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 /*
 	Icons
 	https://google.github.io/material-design-icons/
@@ -188,6 +203,7 @@ blockquote cite:before {
 }
 
 footer {
+	margin-top: 1em;
     clear: both;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
     padding: 1em 0;
@@ -205,4 +221,30 @@ footer address {
 
 .clear {
     clear: both;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid whitesmoke;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-transform: none;
+    text-decoration: none;
+    overflow: visible;
+    font: inherit;
+    margin: 0;
+}
+
+.button:focus,
+.button:hover {
+    font-weight: initial;
+    color: #212529;
+    background-color: darkkhaki;
+    border-color: darkkhaki;
 }
