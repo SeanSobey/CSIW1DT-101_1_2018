@@ -33,19 +33,27 @@ body {
     margin: 0 auto;
 }
 
-h1 {
+main h1 {
     margin-bottom: 1.5em;
 }
 
-h2 {
+main h2 {
     margin-top: 1.2em;
     margin-bottom: 1.2em;
     color: darkgoldenrod;
 }
 
-h3 {
+main h3 {
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+main p {
+    margin-top: 0.5em;
+}
+
+main img {
+    border: 10px solid rgba(0, 0, 0, 0.25)
 }
 
 /*
@@ -191,11 +199,15 @@ blockquote:before {
     color: #7a7a7a;
 }
 
+blockquote p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
 blockquote cite {
     color: #999999;
     font-size: 90%;
     display: block;
-    margin-top: 5px;
 }
 
 blockquote cite:before {
@@ -203,7 +215,7 @@ blockquote cite:before {
 }
 
 footer {
-	margin-top: 1em;
+    margin-top: 1em;
     clear: both;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
     padding: 1em 0;
