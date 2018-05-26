@@ -243,6 +243,8 @@ footer address {
     user-select: none;
     border: 1px solid whitesmoke;
     border-radius: .25rem;
+    background-color: transparent;
+    color: darkkhaki;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;

@@ -1,0 +1,21 @@
+main form {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    border: 1px solid whitesmoke;
+    border-radius: .25rem;
+    padding: 1rem 1rem;
+}
+
+main form input,
+main form textarea {
+    width: 100%;
+}
+
+main form input[type=submit],
+main form input[type=reset] {
+    width: inherit;
+}
+
+main ul {
+	margin-left: 2em;
+}
