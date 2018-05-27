@@ -2,8 +2,3 @@ section figure {
     float: right;
     margin: 1em;
 }
-
-section figcaption {
-    line-height: 1em;
-    font-size: 80%;
-}

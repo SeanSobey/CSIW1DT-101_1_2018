@@ -1,4 +1,3 @@
-
 main ul {
     text-align: center;
     list-style-position: inside;
@@ -16,8 +15,9 @@ aside {
     margin-bottom: 20px;
 }
 
-aside h2, aside h3 {
-	text-align: center;
+aside h2,
+aside h3 {
+    text-align: center;
 }
 
 aside figure {
@@ -29,7 +29,7 @@ aside figure img {
     display: block;
 }
 
-article img {
+article figure {
     float: left;
     margin: 1em;
 }
