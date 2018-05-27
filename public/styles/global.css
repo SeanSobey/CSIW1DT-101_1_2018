@@ -53,7 +53,11 @@ main p {
 }
 
 main img {
-    border: 10px solid rgba(0, 0, 0, 0.25)
+    border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+main iframe {
+    border: 10px solid rgba(0, 0, 0, 0.25);
 }
 
 /*
