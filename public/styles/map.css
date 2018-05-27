@@ -1,0 +1,14 @@
+main figure {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    border: 1px solid whitesmoke;
+    border-radius: .25rem;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+main figure img {
+    box-sizing: border-box;
+    width: 100%;
+}

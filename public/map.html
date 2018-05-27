@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cute Animal Zoo | Map</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" integrity="sha256-7GAtDQ79wTEOjhBKf70uBQG7A5yyb+8rigu07atXWDY=" crossorigin="anonymous" />
+	<link rel="stylesheet" media="all" href="styles/global.css" />
+	<link rel="stylesheet" media="screen" href="styles/map.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="lib/imageMapResizer.min.js"></script>
+	<script>
+		$(function() {
+			$('map').imageMapResize();
+			const mapTitleText = 'Choose an area';
+			const $mapTitle = $('#map-title');
+			$mapTitle.text(mapTitleText);
+			$('map>area').each((_, area) => {
+				const $area = $(area);
+				$area.mouseenter(() => $mapTitle.text($area.attr('title')));
+				$area.mouseleave(() => $mapTitle.text(mapTitleText));
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<img src="images/logo.png" alt="Cute Animal Zoo logo" height="80">
+		<h2>Cute Animal Zoo</h2>
+		<h3>Experience nature as it was
+			<i>meant</i> to be seen!</h3>
+	</header>
+	<nav>
+		<ul>
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="news.html">News</a>
+			</li>
+			<li>
+				<a href="shows.html">Shows</a>
+			</li>
+			<li>
+				<a href="tickets.html">Tickets</a>
+			</li>
+			<li>
+				<a href="merchandise.html">Merchandise</a>
+			</li>
+			<li>
+				<a href="virtual-tour.html">Virtual Tour</a>
+			</li>
+			<li>
+				<a class="current" href="map.html">Map</a>
+			</li>
+			<li>
+				<a href="about.html">About Us</a>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<h1>Map</h1>
+		<figure>
+			<h3 id="map-title"></h3>
+			<img src="images/map/map.png" alt="Map" usemap="#image-map">
+			<map name="image-map">
+				<area alt="" title="Aviary" href="#" coords="418,451,133" shape="circle">
+				<area alt="" title="Coyote" href="#" coords="796,371,76" shape="circle">
+				<area alt="" title="Roosevelt Elk" href="#" coords="701,568,92" shape="circle">
+				<area alt="" title="Owl" href="#" coords="525,763,58" shape="circle">
+				<area alt="" title="Sea Lion" href="#" coords="1051,477,83" shape="circle">
+				<area alt="" title="Puma" href="#" coords="766,770,80" shape="circle">
+				<area alt="" title="Lynx" href="#" coords="889,882,59" shape="circle">
+				<area alt="" title="Bald Eagle" href="#" coords="1089,759,67" shape="circle">
+				<area alt="" title="Bison" href="#" coords="1296,528,74" shape="circle">
+				<area alt="" title="Pudu" href="#" coords="1504,377,45" shape="circle">
+				<area alt="" title="Pronghorn Antelope" href="#" coords="1417,460,67" shape="circle">
+				<area alt="" title="Chacoan Peccary" href="#" coords="1663,462,52" shape="circle">
+				<area alt="" title="Thick-billed Parrot" href="#" coords="1661,613,70" shape="circle">
+				<area alt="" title="Andean Bear" href="#" coords="1646,791,62" shape="circle">
+				<area alt="" title="Waterfowl Marsh" href="#" coords="1369,778,54" shape="circle">
+				<area alt="" title="Sandhill Crane" href="#" coords="1222,977,58" shape="circle">
+				<area alt="" title="Alligator" href="#" coords="1373,998,89" shape="circle">
+			</map>
+		</figure>
+	</main>
+	<footer>
+		<p>&copy; 2018 Cute Animal Zoo</p>
+		<address>1843 Cheriton Dr, Scottburgh, KwaZulu-Natal, 4183</address>
+	</footer>
+</body>
+
+</html>
