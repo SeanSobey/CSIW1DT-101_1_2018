@@ -12,16 +12,15 @@
     height: 200px;
     display: inline-block;
     margin: 0 auto;
-    -webkit-ttransition-property: width, height;
-    -o-ttransition-property: width, height;
-    -moz-transition-property: width, height;
-    transition-property: width, height;
-    transition-duration: 0.5s, 0.5s;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    -moz-transition-property: opacity;
+    transition-property: opacity;
+    transition-duration: 0.5s;
 }
 
 .panel img:hover {
-    width: 320px;
-    height: 220px;
+    opacity: 0.3;
 }
 
 main h2 {
